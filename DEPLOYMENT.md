@@ -5,13 +5,22 @@ This project consists of three services:
 2. **Backend**: Express/Node.js (Deploy on Render)
 3. **ML Service**: FastAPI/Python (Deploy on Render)
 
-## 1. Deploy ML Service (Render)
+## 1. Deploy ML Service (Option A: Render / Option B: Hugging Face Spaces)
+
+### Option A: Render
 - **Environment**: Python
 - **Build Command**: `pip install -r requirements.txt`
 - **Start Command**: `python main.py`
-- **Plan**: Starter (at least 2GB RAM recommended for InsightFace)
-- **Env Vars**:
-  - `PORT`: 8000 (Render set this automatically)
+- **Plan**: Starter (at least 2GB RAM recommended)
+
+### Option B: Hugging Face Spaces (Recommended for API)
+1. Create a new Space on [Hugging Face](https://huggingface.co/new-space).
+2. Choose **Docker** as the SDK.
+3. Upload the contents of the `ml_service` folder (including the `Dockerfile` I created).
+4. Hugging Face will automatically build and host the API on port 7860.
+5. Your API URL will be: `https://<your-username>-<space-name>.hf.space`
+
+---
 
 ## 2. Deploy Backend (Render)
 - **Environment**: Node
