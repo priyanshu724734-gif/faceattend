@@ -13,11 +13,15 @@ This project consists of three services:
 - **Start Command**: `python main.py`
 - **Plan**: Starter (at least 2GB RAM recommended)
 
-### Option B: Hugging Face Spaces (Recommended for API)
+### Option B: Hugging Face Spaces (Recommended / Most Stable)
 1. Create a new Space on [Hugging Face](https://huggingface.co/new-space).
-2. Choose **Docker** as the SDK.
-3. Upload the contents of the `ml_service` folder (including the `Dockerfile` I created).
-4. Hugging Face will automatically build and host the API on port 7860.
+2. Choose **FastAPI** as the SDK (instead of Docker).
+3. Upload the contents of the `ml_service` folder:
+   - `app.py` (Main logic)
+   - `requirements.txt` (Python libs)
+   - `packages.txt` (System libs)
+   - `app/` folder (Anti-spoofing logic)
+4. Hugging Face will automatically install everything and host it.
 5. Your API URL will be: `https://<your-username>-<space-name>.hf.space`
 
 ---
