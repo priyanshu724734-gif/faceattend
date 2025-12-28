@@ -1,0 +1,26 @@
+# Common
+.DS_Store
+node_modules/
+.env
+.env.local
+dist/
+build/
+.next/
+__pycache__/
+*.pyc
+*.log
+
+# Backend specific (if needed)
+backend/node_modules/
+backend/dist/
+backend/.env
+
+# Frontend specific (if needed)
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+
+# ML service specific (if needed)
+ml_service/venv/
+ml_service/__pycache__/
+ml_service/.env

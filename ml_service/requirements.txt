@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+numpy
+opencv-python-headless
+insightface
+onnxruntime
+requests
+Pillow
+scipy
+torch
+torchvision
